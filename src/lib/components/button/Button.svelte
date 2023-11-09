@@ -1,30 +1,22 @@
 <script>
 	let color;
+	let shape;
+	let size = 'md';
 
-	export { color };
+	export { color, shape, size };
 </script>
 
-{#if color === 'primary'}
-	<button class="btn primary">
-		<slot />
-	</button>
-{:else if color === 'secondary'}
-	<button class="btn secondary">
-		<slot />
-	</button>
-{:else}
-	<button class="btn">
-		<slot />
-	</button>
-{/if}
+<button class="btn btn-{color} btn-{shape} btn-{size}">
+	<slot />
+</button>
 
 <style>
 	.btn {
 		background-color: white;
 		border: 1px solid #dadfe5;
-		border-radius: 4px;
+		border-radius: 6px;
 		color: black;
-		padding: 15px 20px;
+		padding: auto;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
@@ -36,23 +28,50 @@
 		border: 1px solid #000;
 	}
 
-	.primary {
+	.btn-primary {
 		background-color: #206bc4;
 		color: white;
 	}
 
-	.primary:hover {
+	.btn-primary:hover {
 		border: none;
 		background-color: rgb(32, 107, 196, 0.8);
 	}
 
-	.secondary {
+	.btn-secondary {
 		background-color: #667382;
 		color: white;
 	}
 
-	.secondary:hover {
+	.btn-secondary:hover {
 		border: none;
 		background-color: rgb(102, 115, 130, 0.8);
+	}
+
+	.btn-pill {
+		border-radius: 50px;
+	}
+
+	.btn-round {
+		border-radius: 8px;
+	}
+
+	.btn-tile {
+		border-radius: 0;
+	}
+
+	.btn-sm {
+		font-size: .875rem;
+		padding: 0.25rem 0.5rem;
+	}
+
+	.btn-md {
+		font-size: .975rem;
+		padding: 0.3rem 1rem;
+	}
+
+	.btn-lg {
+    	font-size: 1.25rem;
+		padding: 0.5rem 1rem;
 	}
 </style>

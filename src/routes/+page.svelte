@@ -2,7 +2,7 @@
 	import Button from '$lib/components/button/Button.svelte';
 </script>
 
-<Button color="primary">Button</Button>
+<Button color="secondary" shape="pill" size="lg">Button</Button>
 
 <style lang="postcss">
 	:global(html) {
