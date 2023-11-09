@@ -61,17 +61,17 @@
 	}
 
 	.btn-sm {
-		font-size: .875rem;
+		font-size: 0.875rem;
 		padding: 0.25rem 0.5rem;
 	}
 
 	.btn-md {
-		font-size: .975rem;
+		font-size: 0.975rem;
 		padding: 0.3rem 1rem;
 	}
 
 	.btn-lg {
-    	font-size: 1.25rem;
+		font-size: 1.25rem;
 		padding: 0.5rem 1rem;
 	}
 </style>
