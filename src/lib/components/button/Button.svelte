@@ -20,39 +20,39 @@
 
 <style>
 	.btn {
-    background-color: white;
+		background-color: white;
 		border: 1px solid #dadfe5;
-    border-radius: 4px;
+		border-radius: 4px;
 		color: black;
 		padding: 15px 20px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
 		font-size: 14px;
-    cursor: pointer;
+		cursor: pointer;
 	}
 
-  .btn:hover {
-    border: 1px solid #000;
-  }
+	.btn:hover {
+		border: 1px solid #000;
+	}
 
 	.primary {
-		background-color: #206BC4;
-    color: white
+		background-color: #206bc4;
+		color: white;
 	}
 
-  .primary:hover {
-    border: none;
-    background-color: rgb(32, 107, 196, .8);
-  }
+	.primary:hover {
+		border: none;
+		background-color: rgb(32, 107, 196, 0.8);
+	}
 
 	.secondary {
 		background-color: #667382;
-    color: white
+		color: white;
 	}
 
-  .secondary:hover {
-    border: none;
-    background-color: rgb(102, 115, 130, .8);
-  }
+	.secondary:hover {
+		border: none;
+		background-color: rgb(102, 115, 130, 0.8);
+	}
 </style>

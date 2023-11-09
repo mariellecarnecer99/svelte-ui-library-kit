@@ -1,6 +1,20 @@
 {
 	"name": "svelte-ui-library-kit",
 	"version": "0.1.1",
+	"keywords": [
+		"svelte",
+		"sveltejs",
+		"svelte library",
+		"svelte components",
+		"svelte ui components",
+		"svelte-kit"
+	],
+	"author": "Marielle Carnecer <mcarnecer@startechup.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mariellecarnecer99/svelte-ui-library-kit"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
