@@ -1,50 +1,51 @@
 <script>
-    let col;
-    let id;
-    let label;
-    let type;
-    let name;
+	let col;
+	let id;
+	let label;
+	let type;
+	let name;
 
-    export {col, id, label, type, name}
+	export { col, id, label, type, name };
 </script>
 
 <div class="container">
-    <div class="row">
-        <div class="col-{col}">
-            <label for={id}>{label}</label>
-            <input type={type} id={id} name={name}>
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-{col}">
+			<label for={id}>{label}</label>
+			<input {type} {id} {name} />
+		</div>
+	</div>
 </div>
-<style>
-    input[type=text] {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      resize: vertical;
-    }
-    
-    label {
-      padding: 12px 12px 12px 0;
-      display: inline-block;
-    }
-    
-    input[type=submit] {
-      background-color: #04AA6D;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      float: right;
-    }
-    
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
 
-    .col-1 {
+<style>
+	input[type='text'] {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		resize: vertical;
+	}
+
+	label {
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+
+	input[type='submit'] {
+		background-color: #04aa6d;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+	}
+
+	input[type='submit']:hover {
+		background-color: #45a049;
+	}
+
+	.col-1 {
 		width: 8.33%;
 	}
 
@@ -102,19 +103,21 @@
 	.col-12 {
 		width: 100%;
 	}
-    
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-      }
-    }
-    </style>
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+		.col-25,
+		.col-75,
+		input[type='submit'] {
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+</style>

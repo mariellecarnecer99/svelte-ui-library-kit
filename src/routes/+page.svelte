@@ -3,7 +3,7 @@
 	import Grid from '$lib/components/grid/Grid.svelte';
 	import GridItem from '$lib/components/grid/GridItem.svelte';
 	import FormInput from '$lib/components/form/FormInput.svelte';
-	import Icon from "$lib/components/icon/Icon.svelte";
+	import Icon from '$lib/components/icon/Icon.svelte';
 </script>
 
 <section>
@@ -25,12 +25,12 @@
 		<GridItem col="6">6</GridItem>
 	</Grid>
 
-	<FormInput col="6" for="fname" label="First Name" type="text" name="firstname"></FormInput>
-	<FormInput col="6" for="lname" label="Last Name" type="text" name="lastname"></FormInput>
-	<FormInput col="12" for="username" label="Username" type="text" name="username"></FormInput>
+	<FormInput col="6" id="fname" label="First Name" type="text" name="firstname" />
+	<FormInput col="6" id="lname" label="Last Name" type="text" name="lastname" />
+	<FormInput col="12" id="username" label="Username" type="text" name="username" />
 
 	<Icon type="brands" name="wikipedia-w" />
-	<Icon type="solid" name="house" />
+	<Icon type="regular" name="user" />
 </section>
 
 <style>
