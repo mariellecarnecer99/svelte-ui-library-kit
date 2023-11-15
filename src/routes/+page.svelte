@@ -4,6 +4,8 @@
 	import GridItem from '$lib/components/grid/GridItem.svelte';
 	import FormInput from '$lib/components/form/FormInput.svelte';
 	import Icon from '$lib/components/icon/Icon.svelte';
+	import Sidebar from '$lib/components/sidebar/Sidebar.svelte';
+	import SidebarItem from '$lib/components/sidebar/SidebarItem.svelte';
 </script>
 
 <section>
@@ -31,6 +33,11 @@
 
 	<Icon type="brands" name="wikipedia-w" />
 	<Icon type="regular" name="user" />
+
+	<Sidebar>
+		<SidebarItem>Getting Started</SidebarItem>
+		<SidebarItem>Components</SidebarItem>
+	</Sidebar>
 </section>
 
 <style>
