@@ -7,4 +7,10 @@
 	export { type, name };
 </script>
 
-<i class="fa-{type} fa-{name}" />
+<i class="icon fa-{type} fa-{name}" />
+
+<style>
+	.icon {
+		margin: 0 8px;
+	}
+</style>

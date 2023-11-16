@@ -1,11 +1,11 @@
 <script>
-    // let title;
+    let link;
 
-    // export { title };
+    export { link };
 </script>
 
 <div class="sidebar-items">
-    <a href="#"><slot /></a>
+    <a href={link}><slot /></a>
 </div>
 
 <style>

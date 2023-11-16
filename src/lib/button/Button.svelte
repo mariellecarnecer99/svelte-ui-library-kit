@@ -1,20 +1,21 @@
 <script>
+	let link;
 	let color;
 	let shape;
 	let size = 'md';
 
-	export { color, shape, size };
+	export { link, color, shape, size };
 </script>
 
-<button class="btn btn-{color} btn-{shape} btn-{size}">
+<button class="btn btn-{color} btn-{shape} btn-{size}" onClick="window.open('{link}');">
 	<slot />
 </button>
 
 <style>
 	.btn {
-		background-color: white;
+		/* background-color: white;
 		border: 1px solid #dadfe5;
-		border-radius: 6px;
+		border-radius: 6px; */
 		color: black;
 		padding: auto;
 		text-align: center;
@@ -25,7 +26,8 @@
 	}
 
 	.btn:hover {
-		border: 1px solid #000;
+		/* border: 1px solid #000; */
+		text-decoration: underline;
 	}
 
 	.btn-primary {
