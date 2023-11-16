@@ -22,7 +22,7 @@
 	<section>
 		<Navbar />
 	</section>
-	<div class="mx-auto text-center prose lg:prose-xl py-20">
+	<div class="mx-auto text-center prose lg:prose-xl py-28">
 		<h1>Empower your development with our extensive UI component library</h1>
 		<h3>A flexible & powerful Svelte library for building web applications quickly and easily</h3>
 		<div class="flex justify-center gap-4 pt-5">
