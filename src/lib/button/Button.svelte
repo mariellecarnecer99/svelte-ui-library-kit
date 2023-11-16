@@ -50,6 +50,11 @@
 		background-color: rgb(102, 115, 130, 0.8);
 	}
 
+	.btn-white {
+		background-color: #fff;
+		color: #000;
+	}
+
 	.btn-pill {
 		border-radius: 50px;
 	}

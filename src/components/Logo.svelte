@@ -1,3 +1,3 @@
 <div class="logo">
-    <p>Svelte UI Kit</p>
+	<p>Svelte UI Kit</p>
 </div>
