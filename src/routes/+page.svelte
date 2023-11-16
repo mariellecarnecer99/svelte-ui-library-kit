@@ -27,12 +27,11 @@
 		<h3>A flexible & powerful Svelte library for building web applications quickly and easily</h3>
 		<div class="flex justify-center gap-4 pt-5">
 			<div class="flex-initial w-80" on:click={copy}>
-				<p class="py-2 border rounded border-sky-500 c-white">npm i svelte-ui-library-kit <Icon type={iconType} name={icon} /></p>
+				<p class="py-2 border rounded-lg border-sky-500 c-white">npm i svelte-ui-library-kit <Icon type={iconType} name={icon} /></p>
 			</div>
 			<div class="my-6">
 				<Button color="white" shape="round" size="lg">
-					<Icon type="solid" name="book-open" />
-					Get Started
+					<Icon type="solid" name="book-open" />Get Started
 				</Button>
 			</div>
 			
