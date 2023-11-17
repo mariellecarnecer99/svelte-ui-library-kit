@@ -3,18 +3,18 @@
 	import Icon from '$lib/icon/Icon.svelte';
 	import Button from '$lib/button/Button.svelte';
 
-	let icon = 'clipboard'
-	let iconType = 'regular'
+	let icon = 'clipboard';
+	let iconType = 'regular';
 
 	async function copy() {
-		await navigator.clipboard.writeText('npm i svelte-ui-library-kit')
-		icon = 'check'
-		iconType = 'solid'
+		await navigator.clipboard.writeText('npm i svelte-ui-library-kit');
+		icon = 'check';
+		iconType = 'solid';
 
 		setTimeout(() => {
-			icon = 'clipboard'
-			iconType = 'regular'
-		}, 3000)
+			icon = 'clipboard';
+			iconType = 'regular';
+		}, 3000);
 	}
 </script>
 
@@ -27,14 +27,15 @@
 		<h3>A flexible & powerful Svelte library for building web applications quickly and easily</h3>
 		<div class="flex justify-center gap-4 pt-5">
 			<div class="flex-initial w-80" on:click={copy}>
-				<p class="py-2 border rounded-lg border-sky-500 c-white">npm i svelte-ui-library-kit <Icon type={iconType} name={icon} /></p>
+				<p class="py-2 border rounded-lg border-sky-500 c-white">
+					npm i svelte-ui-library-kit <Icon type={iconType} name={icon} />
+				</p>
 			</div>
 			<div class="my-6">
 				<Button color="white" shape="round" size="lg" link="/docs/introduction">
 					<Icon type="solid" name="book-open" />Get Started
 				</Button>
 			</div>
-			
 		</div>
 	</div>
 </div>

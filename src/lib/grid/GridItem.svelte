@@ -11,7 +11,7 @@
 <style>
 	.grid-item {
 		background-color: #fff;
-		padding: 3%;
+		padding: 20px;
 		border: 1px solid #dadfe5;
 		text-align: center;
 		color: black;
