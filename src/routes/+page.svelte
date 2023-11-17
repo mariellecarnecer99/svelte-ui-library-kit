@@ -30,7 +30,7 @@
 				<p class="py-2 border rounded-lg border-sky-500 c-white">npm i svelte-ui-library-kit <Icon type={iconType} name={icon} /></p>
 			</div>
 			<div class="my-6">
-				<Button color="white" shape="round" size="lg">
+				<Button color="white" shape="round" size="lg" link="/docs/introduction">
 					<Icon type="solid" name="book-open" />Get Started
 				</Button>
 			</div>
