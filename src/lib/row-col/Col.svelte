@@ -4,15 +4,23 @@
 	export { span };
 </script>
 
-<div class="col col-{span}">
+<div id="colOrder" class="col col-{span}">
 	<slot />
 </div>
 
 <style>
-    .col {
-        padding: 20px;
-        border: 1px solid #dadfe5;
-    }
+	:root {
+		--order: var();
+	}
+
+	.col {
+		padding: 20px;
+		border: 1px solid #dadfe5;
+	}
+
+	#colOrder {
+		order: var(--order);
+	}
 
 	.col-1 {
 		width: 4.1667%;
