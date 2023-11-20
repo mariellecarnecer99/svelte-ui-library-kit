@@ -1,27 +1,31 @@
 <script>
-	let justify;
-	let align;
-	let className;
+	let gutter = 16;
+	let justify = 'center';
+	let align = 'center';
+	let className = '';
+	let rowClasses = `row ${className} justify-${justify} align-${align}`;
 
-	export { justify, align, className as class };
+	export { gutter, justify, align, className as class };
 </script>
 
 <div class="container">
-	<div class="row {className} justify-{justify} align-{align}">
+	<div class={rowClasses} style="--gutter: {gutter}px;">
 		<slot />
 	</div>
 </div>
 
 <style>
 	.container {
-		width: 100%;
+		max-width: 1200px;
+	  	margin-left: auto;
+	  	margin-right: auto;
 	}
 
 	.row {
 		width: 100%;
 		display: flex;
-		/* flex-wrap: wrap; */
 		margin-top: 25px;
+		gap: var(--gutter);
 	}
 
 	.align-top {
