@@ -1,10 +1,11 @@
 <script>
 	let span;
+	let className;
 
-	export { span };
+	export { span, className as class };
 </script>
 
-<div id="colOrder" class="col col-{span}">
+<div id="colOrder" class="col {className} col-{span}">
 	<slot />
 </div>
 

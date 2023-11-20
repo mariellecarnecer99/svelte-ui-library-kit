@@ -1,12 +1,13 @@
 <script>
 	let justify;
 	let align;
+	let className;
 
-	export { justify, align };
+	export { justify, align, className as class };
 </script>
 
 <div class="container">
-	<div class="row justify-{justify} align-{align}">
+	<div class="row {className} justify-{justify} align-{align}">
 		<slot />
 	</div>
 </div>
