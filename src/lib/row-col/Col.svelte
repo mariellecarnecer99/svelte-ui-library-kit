@@ -1,25 +1,20 @@
 <script>
 	let span;
-	let className;
+	let order;
+	let className = '';
+	let colClasses = `col ${className} col-${span}`;
 
-	export { span, className as class };
+	export { span, order, className as class };
 </script>
 
-<div id="colOrder" class="col {className} col-{span}">
+<div class={colClasses} style="--order: {order};">
 	<slot />
 </div>
 
 <style>
-	:root {
-		--order: var();
-	}
-
 	.col {
 		padding: 20px;
 		border: 1px solid #dadfe5;
-	}
-
-	#colOrder {
 		order: var(--order);
 	}
 
