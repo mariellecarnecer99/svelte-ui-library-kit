@@ -2,7 +2,9 @@
 export { default as Button } from './button/Button.svelte';
 export { default as Grid } from './grid/Grid.svelte';
 export { default as GridItem } from './grid/GridItem.svelte';
-export { default as FormInput } from './form/FormInput.svelte';
+export { default as Form } from './form/Form.svelte';
+export { default as FormItem } from './form/FormItem.svelte';
+export { default as Input } from './form/Input.svelte';
 export { default as Icon } from './icon/Icon.svelte';
 export { default as Sidebar } from './sidebar/Sidebar.svelte';
 export { default as SidebarItem } from './sidebar/SidebarItem.svelte';

@@ -2,6 +2,11 @@
 	import Navbar from '../components/landing-page/Navbar.svelte';
 	import Icon from '$lib/icon/Icon.svelte';
 	import Button from '$lib/button/Button.svelte';
+	// import Form from '$lib/form/Form.svelte';
+	// import FormItem from '$lib/form/FormItem.svelte';
+	// import Input from '$lib/form/Input.svelte';
+
+	// let formInline = { user: '', password: '' };
 
 	let icon = 'clipboard';
 	let iconType = 'regular';
@@ -50,6 +55,22 @@
 		/>
 	</svg>
 </div>
+
+<!-- <Form>
+	<FormItem>
+		<Icon type="solid" name="user" />
+		<Input type="text" bind:value={formInline.user} placeholder="Username" />
+	</FormItem>
+
+	<FormItem>
+		<Icon type="solid" name="lock" />
+		<Input type="password" bind:value={formInline.password} placeholder="Password" />
+	</FormItem>
+
+	<FormItem>
+		<Button color="primary">Sign in</Button>
+	</FormItem>
+</Form> -->
 
 <style>
 	section {
