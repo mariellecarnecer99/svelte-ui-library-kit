@@ -72,6 +72,7 @@
 		"@fortawesome/free-regular-svg-icons": "^6.4.2",
 		"@fortawesome/free-solid-svg-icons": "^6.4.2",
 		"@tabler/core": "^1.0.0-beta20",
+		"iconify-icon": "^1.0.8",
 		"postcss-cli": "^10.1.0",
 		"postcss-load-config": "^4.0.2"
 	}

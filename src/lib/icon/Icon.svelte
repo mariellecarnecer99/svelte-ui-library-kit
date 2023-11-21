@@ -1,16 +1,10 @@
 <script>
-	import '@fortawesome/fontawesome-free/css/all.min.css';
-
+	import "iconify-icon";
+	
 	let type;
 	let name;
 
 	export { type, name };
 </script>
 
-<i class="icon fa-{type} fa-{name}" />
-
-<style>
-	.icon {
-		margin: 0 8px;
-	}
-</style>
+<iconify-icon icon="fa6-{type}:{name}"/>
