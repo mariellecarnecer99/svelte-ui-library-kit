@@ -1,7 +1,7 @@
 <script>
 	let color = "primary";
 	let shape = "tile";
-	let size = "2xl"
+	let size = "md"
 
 	export { color, shape, size };
 </script>
