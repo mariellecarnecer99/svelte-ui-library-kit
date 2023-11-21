@@ -1,12 +1,13 @@
 <script>
 	let color = "primary";
 	let shape = "tile";
+	let size = "2xl"
 
-	export { color, shape };
+	export { color, shape, size };
 </script>
 
 <!-- onClick="window.open('{link}');" -->
-<button class="btn btn-{color} btn-{shape}">
+<button class="btn btn-{color} btn-{shape} btn-{size}">
 	<slot />
 </button>
 
@@ -69,18 +70,21 @@
 		@apply rounded-none
 	}
 
-	/* .btn-sm {
-		font-size: 0.875rem;
-		padding: 0.25rem 0.5rem;
+	.btn-sm {
+		@apply text-sm
 	}
 
 	.btn-md {
-		font-size: 0.975rem;
-		padding: 0.3rem 1rem;
+		@apply text-base
 	}
 
 	.btn-lg {
-		font-size: 1.25rem;
-		padding: 0.5rem 1rem;
-	} */
+		@apply text-lg
+	}
+	.btn-xl {
+		@apply text-xl
+	}
+	.btn-2xl {
+		@apply text-2xl
+	}
 </style>
