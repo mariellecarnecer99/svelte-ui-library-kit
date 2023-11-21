@@ -1,0 +1,16 @@
+h1 {
+	@apply text-3xl font-bold;
+	@apply text-neutral-700 dark:text-neutral-200;
+}
+
+p {
+	@apply text-lg;
+	@apply text-neutral-600 dark:text-neutral-300;
+	@apply capitalize;
+}
+
+h2 {
+	@apply text-2xl font-bold;
+	@apply text-neutral-700 dark:text-neutral-200;
+	@apply underline;
+}

@@ -56,22 +56,6 @@
 	</svg>
 </div>
 
-<!-- <Form>
-	<FormItem>
-		<Icon type="solid" name="user" />
-		<Input type="text" bind:value={formInline.user} placeholder="Username" />
-	</FormItem>
-
-	<FormItem>
-		<Icon type="solid" name="lock" />
-		<Input type="password" bind:value={formInline.password} placeholder="Password" />
-	</FormItem>
-
-	<FormItem>
-		<Button color="primary">Sign in</Button>
-	</FormItem>
-</Form> -->
-
 <style>
 	section {
 		display: flex;

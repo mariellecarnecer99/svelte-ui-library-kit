@@ -1,73 +1,75 @@
 <script>
-	let link;
-	let color;
-	let shape;
-	let size = 'md';
+	let color = "primary";
+	let shape = "tile";
 
-	export { link, color, shape, size };
+	export { color, shape };
 </script>
 
-<button class="btn btn-{color} btn-{shape} btn-{size}" onClick="window.open('{link}');">
+<!-- onClick="window.open('{link}');" -->
+<button class="btn btn-{color} btn-{shape}">
 	<slot />
 </button>
 
-<style>
+<style lang="postcss">
 	.btn {
-		/* background-color: white;
-		border: 1px solid #dadfe5;
-		border-radius: 6px; */
-		color: black;
-		padding: auto;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 14px;
-		cursor: pointer;
+		@apply py-2 px-4 border border-inherit;
 	}
-
-	.btn:hover {
-		/* border: 1px solid #000; */
-		text-decoration: underline;
-	}
-
 	.btn-primary {
-		background-color: #206bc4;
-		color: white;
+		@apply bg-blue-700 text-white;
 	}
-
 	.btn-primary:hover {
-		border: none;
-		background-color: rgb(32, 107, 196, 0.8);
+		@apply bg-blue-900;
 	}
-
 	.btn-secondary {
-		background-color: #667382;
-		color: white;
+		@apply bg-gray-500 text-white;
 	}
-
 	.btn-secondary:hover {
-		border: none;
-		background-color: rgb(102, 115, 130, 0.8);
+		@apply bg-gray-700;
 	}
-
-	.btn-white {
-		background-color: #fff;
-		color: #000;
+	.btn-success {
+		@apply bg-green-600 text-white;
 	}
-
+	.btn-success:hover {
+		@apply bg-green-800;
+	}
+	.btn-warning {
+		@apply bg-orange-600 text-white;
+	}
+	.btn-warning:hover {
+		@apply bg-orange-800;
+	}
+	.btn-danger {
+		@apply bg-red-600 text-white;
+	}
+	.btn-danger:hover {
+		@apply bg-red-800;
+	}
+	.btn-info {
+		@apply bg-sky-400 text-white;
+	}
+	.btn-info:hover {
+		@apply bg-sky-600;
+	}
+	.btn-light {
+		@apply bg-white text-black;
+	}
+	.btn-dark {
+		@apply bg-black text-white;
+	}
+	
 	.btn-pill {
-		border-radius: 50px;
+		@apply rounded-full
 	}
 
 	.btn-round {
-		border-radius: 8px;
+		@apply rounded
 	}
 
 	.btn-tile {
-		border-radius: 0;
+		@apply rounded-none
 	}
 
-	.btn-sm {
+	/* .btn-sm {
 		font-size: 0.875rem;
 		padding: 0.25rem 0.5rem;
 	}
@@ -80,5 +82,5 @@
 	.btn-lg {
 		font-size: 1.25rem;
 		padding: 0.5rem 1rem;
-	}
+	} */
 </style>
