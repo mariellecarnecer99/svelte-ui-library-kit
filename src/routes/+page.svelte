@@ -2,11 +2,23 @@
 	import Navbar from '../components/landing-page/Navbar.svelte';
 	import Icon from '$lib/icon/Icon.svelte';
 	import Button from '$lib/button/Button.svelte';
+	import Select from '$lib/form/Select.svelte';
 	// import Form from '$lib/form/Form.svelte';
 	// import FormItem from '$lib/form/FormItem.svelte';
 	// import Input from '$lib/form/Input.svelte';
 
 	// let formInline = { user: '', password: '' };
+
+	let cityList = [
+		{ value: 'New York', label: 'New York' },
+		{ value: 'London', label: 'London' },
+		{ value: 'Sydney', label: 'Sydney' },
+		{ value: 'Ottawa', label: 'Ottawa' },
+		{ value: 'Paris', label: 'Paris' },
+		{ value: 'Canberra', label: 'Canberra' }
+	];
+
+	let model = '';
 
 	let icon = 'clipboard';
 	let iconType = 'regular';
@@ -55,6 +67,8 @@
 		/>
 	</svg>
 </div>
+
+<Select items={cityList} {model} clearable />
 
 <style>
 	section {
