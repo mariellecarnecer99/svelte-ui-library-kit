@@ -85,7 +85,7 @@
 		margin-bottom: 15px;
 	}
 
-	.input-group input {
+	/* .input-group input {
 		width: 100%;
 		padding: 10px;
 		box-sizing: border-box;
@@ -114,5 +114,5 @@
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;
-	}
+	} */
 </style>

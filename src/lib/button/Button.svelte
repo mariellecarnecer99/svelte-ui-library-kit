@@ -1,7 +1,7 @@
 <script>
-	let color = "primary";
-	let shape = "tile";
-	let size = "md"
+	let color = 'primary';
+	let shape = 'tile';
+	let size = 'md';
 
 	export { color, shape, size };
 </script>
@@ -57,34 +57,34 @@
 	.btn-dark {
 		@apply bg-black text-white;
 	}
-	
+
 	.btn-pill {
-		@apply rounded-full
+		@apply rounded-full;
 	}
 
 	.btn-round {
-		@apply rounded
+		@apply rounded;
 	}
 
 	.btn-tile {
-		@apply rounded-none
+		@apply rounded-none;
 	}
 
 	.btn-sm {
-		@apply text-sm
+		@apply text-sm;
 	}
 
 	.btn-md {
-		@apply text-base
+		@apply text-base;
 	}
 
 	.btn-lg {
-		@apply text-lg
+		@apply text-lg;
 	}
 	.btn-xl {
-		@apply text-xl
+		@apply text-xl;
 	}
 	.btn-2xl {
-		@apply text-2xl
+		@apply text-2xl;
 	}
 </style>
