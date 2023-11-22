@@ -9,7 +9,15 @@
 
 <select bind:value={model} {disabled} class="form-select select-{size}">
 	{#each items as item (item.value)}
-		<option value={item.value} disabled={item.disabled}>{item.label}</option>
+		{#if item.group}
+			<optgroup label={item.label}>
+				{#each item.options as option (option.value)}
+					<option value={option.value} disabled={option.disabled}>{option.label}</option>
+				{/each}
+			</optgroup>
+		{:else}
+			<option value={item.value} disabled={item.disabled}>{item.label}</option>
+		{/if}
 	{/each}
 </select>
 
