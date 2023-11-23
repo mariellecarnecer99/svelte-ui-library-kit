@@ -1,7 +1,7 @@
 <script>
 	let value = false;
 
-    export { value }
+	export { value };
 </script>
 
 <label class="switch">
@@ -23,7 +23,7 @@
 	}
 
 	.slider:before {
-        content: '';
+		content: '';
 		@apply absolute h-6 w-6 left-1 bottom-1 bg-white transition duration-300;
 	}
 
@@ -35,7 +35,7 @@
 		@apply focus:ring-blue-500;
 	}
 
-    input:checked + .slider:before {
+	input:checked + .slider:before {
 		transform: translateX(26px);
 	}
 

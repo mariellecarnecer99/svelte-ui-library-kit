@@ -3,6 +3,7 @@
 	import Icon from '$lib/icon/Icon.svelte';
 	import Button from '$lib/button/Button.svelte';
 	// import Datepicker from '$lib/form/Datepicker.svelte';
+	import Upload from '$lib/form/Upload.svelte';
 	// import Form from '$lib/form/Form.svelte';
 	// import FormItem from '$lib/form/FormItem.svelte';
 	// import Input from '$lib/form/Input.svelte';
@@ -73,6 +74,7 @@
 </div>
 <br />
 <!-- <Datepicker /> -->
+<Upload />
 
 <style>
 	section {
