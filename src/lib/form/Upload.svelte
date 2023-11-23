@@ -5,18 +5,23 @@
 </script>
 
 <div class="file-upload">
-	<label for="fileInput" class="fileInput">
+	<label for="fileInput" class="file-input">
 		<Icon type="solid" name="cloud-arrow-up" />
 		<span>Upload files</span>
 	</label>
-	<input id="fileInput" type="file" class="hidden" />
+	<input id="fileInput" type="file" class="file-input-hidden" />
 </div>
 
 <style lang="postcss">
 	.file-upload {
-		@apply border border-gray-300 p-2 rounded-md w-36;
+		@apply border border-solid border-gray-300 p-2 rounded-md w-32;
 	}
-	.fileInput {
-		@apply flex items-center space-x-2 cursor-pointer;
+
+	.file-input {
+		@apply flex items-center ml-2 cursor-pointer
 	}
+
+    .file-input-hidden {
+        @apply hidden
+    }
 </style>
