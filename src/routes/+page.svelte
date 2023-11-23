@@ -2,6 +2,7 @@
 	import Navbar from '../components/landing-page/Navbar.svelte';
 	import Icon from '$lib/icon/Icon.svelte';
 	import Button from '$lib/button/Button.svelte';
+	// import Datepicker from '$lib/form/Datepicker.svelte';
 	// import Form from '$lib/form/Form.svelte';
 	// import FormItem from '$lib/form/FormItem.svelte';
 	// import Input from '$lib/form/Input.svelte';
@@ -70,6 +71,8 @@
 		/>
 	</svg>
 </div>
+<br />
+<!-- <Datepicker /> -->
 
 <style>
 	section {

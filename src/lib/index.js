@@ -9,6 +9,7 @@ export { default as Radio } from './form/Radio.svelte';
 export { default as Checkbox } from './form/Checkbox.svelte';
 export { default as Select } from './form/Select.svelte';
 export { default as Switch } from './form/Switch.svelte';
+export { default as Datepicker } from './form/Datepicker.svelte';
 export { default as Icon } from './icon/Icon.svelte';
 export { default as Sidebar } from './sidebar/Sidebar.svelte';
 export { default as SidebarItem } from './sidebar/SidebarItem.svelte';
