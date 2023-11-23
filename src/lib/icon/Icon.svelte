@@ -7,4 +7,10 @@
 	export { type, name };
 </script>
 
-<iconify-icon icon="fa6-{type}:{name}" />
+<iconify-icon icon="fa6-{type}:{name}" class="icon" />
+
+<style lang="postcss">
+	.icon {
+		@apply mr-3;
+	}
+</style>

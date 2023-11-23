@@ -5,7 +5,7 @@
 </script>
 
 <div class="file-upload">
-	<label for="fileInput" class="flex items-center space-x-2 cursor-pointer">
+	<label for="fileInput" class="fileInput">
 		<Icon type="solid" name="cloud-arrow-up" />
 		<span>Upload files</span>
 	</label>
@@ -15,5 +15,8 @@
 <style lang="postcss">
 	.file-upload {
 		@apply border border-gray-300 p-2 rounded-md w-36;
+	}
+	.fileInput {
+		@apply flex items-center space-x-2 cursor-pointer;
 	}
 </style>
