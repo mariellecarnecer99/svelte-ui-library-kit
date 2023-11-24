@@ -92,8 +92,6 @@
 
 <!-- <Slider /> -->
 
-<!-- <Slider /> -->
-
 <style>
 	section {
 		display: flex;

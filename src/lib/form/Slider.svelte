@@ -50,8 +50,8 @@
 	}
 
 	.slider input[type='range'] {
-		transition: opacity 0.2s;
-		@apply w-full appearance-none h-2 bg-gray-300 rounded outline-none opacity-70;
+		/* transition: opacity 0.2s; */
+		@apply w-full appearance-none h-2 bg-gray-300 rounded outline-none opacity-70 transition-colors duration-200;
 	}
 
 	.slider input[type='range']:hover {
@@ -59,8 +59,8 @@
 	}
 
 	.slider input[type='range']::-webkit-slider-thumb {
-		transition: background 0.2s;
-		@apply appearance-none w-4 h-4 rounded-full bg-blue-500 cursor-pointer;
+		/* transition: background 0.2s; */
+		@apply appearance-none w-4 h-4 rounded-full bg-blue-500 cursor-pointer transition-colors duration-200;
 	}
 
 	.slider input[type='range']::-webkit-slider-thumb:hover {
