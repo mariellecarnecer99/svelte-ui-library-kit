@@ -13,6 +13,7 @@ export { default as Upload } from './form/Upload.svelte';
 export { default as Datepicker } from './form/Datepicker.svelte';
 export { default as Table } from './form/Table.svelte';
 export { default as Slider } from './form/Slider.svelte';
+export { default as Colorpicker } from './form/Colorpicker.svelte';
 export { default as Icon } from './icon/Icon.svelte';
 export { default as Sidebar } from './sidebar/Sidebar.svelte';
 export { default as SidebarItem } from './sidebar/SidebarItem.svelte';

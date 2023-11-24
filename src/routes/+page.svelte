@@ -2,7 +2,7 @@
 	import Navbar from '../components/landing-page/Navbar.svelte';
 	import Icon from '$lib/icon/Icon.svelte';
 	import Button from '$lib/button/Button.svelte';
-	// import Slider from '$lib/form/Slider.svelte';
+	// import Colorpicker from '$lib/form/Colorpicker.svelte';
 	// import Form from '$lib/form/Form.svelte';
 	// import FormItem from '$lib/form/FormItem.svelte';
 	// import Input from '$lib/form/Input.svelte';
@@ -84,6 +84,7 @@
 		/>
 	</svg>
 </div>
+
 <!-- <br /> -->
 <!-- <Datepicker /> -->
 <!-- <Upload /> -->
@@ -91,6 +92,8 @@
 <!-- <Table columns={headers} data={items} /> -->
 
 <!-- <Slider /> -->
+
+<!-- <Colorpicker bind:color={color2} onChange={handleColorChange}  /> -->
 
 <style>
 	section {
