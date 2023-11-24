@@ -18,10 +18,10 @@
 	}
 
 	.file-input {
-		@apply flex items-center ml-2 cursor-pointer
+		@apply flex items-center ml-2 cursor-pointer;
 	}
 
-    .file-input-hidden {
-        @apply hidden
-    }
+	.file-input-hidden {
+		@apply hidden;
+	}
 </style>

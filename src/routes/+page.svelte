@@ -2,8 +2,7 @@
 	import Navbar from '../components/landing-page/Navbar.svelte';
 	import Icon from '$lib/icon/Icon.svelte';
 	import Button from '$lib/button/Button.svelte';
-	// import Datepicker from '$lib/form/Datepicker.svelte';
-	// import Upload from '$lib/form/Upload.svelte';
+	import Table from '$lib/form/Table.svelte';
 	// import Form from '$lib/form/Form.svelte';
 	// import FormItem from '$lib/form/FormItem.svelte';
 	// import Input from '$lib/form/Input.svelte';
@@ -27,6 +26,19 @@
 
 	let icon = 'clipboard';
 	let iconType = 'regular';
+
+	let headers = [
+		{ title: 'Name', key: 'name' },
+		{ title: 'Age', key: 'age' },
+		{ title: 'Address', key: 'address' }
+	];
+
+	let items = [
+		{ name: 'John Brown', age: 18, address: 'New York No. 1 Lake Park', date: '2016-10-03' },
+		{ name: 'Jim Green', age: 24, address: 'London No. 1 Lake Park', date: '2016-10-01' },
+		{ name: 'Joe Black', age: 30, address: 'Sydney No. 1 Lake Park', date: '2016-10-02' },
+		{ name: 'Jon Snow', age: 26, address: 'Ottawa No. 2 Lake Park', date: '2016-10-04' }
+	];
 
 	async function copy() {
 		await navigator.clipboard.writeText('npm i svelte-ui-library-kit');
@@ -75,6 +87,8 @@
 <br />
 <!-- <Datepicker /> -->
 <!-- <Upload /> -->
+
+<Table columns={headers} data={items} />
 
 <style>
 	section {
